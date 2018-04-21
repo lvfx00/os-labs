@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         exit(3);
     }
 
-    sprintf(command, "vim %s\n", argv[1]);
+    sprintf(command, "vi %s\n", argv[1]);
     system(command);
 
     lock.l_type = F_UNLCK;    /* unlock file */
